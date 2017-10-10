@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="css/app.css" class="main-less">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+        <script src="intelxdk.js"></script>
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+
+        <!-- Azrin - 280917 -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+    </head>
+
+    <body>
+        <div class="upage mainBG1" id="mainpage">
+
+            <!--start footer added by fadzil-->
+            <a class="footer-btn right main-icon uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+            data-ver="0" href="#" id="fbck-btn">
+                <img src="images/feedbck-btm-icon.svg">
+                <span class="uib-caption">Student Menu</span>
+            </a>
+            <!--end footer added by fadzil-->
+
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left" id="page_61_65">
+                    <div class="logo-wrapper grid grid-pad urow uib_row_1 row-height-0" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="widget uib_w_1 scale-image d-margins" data-uib="media/img" data-ver="0">
+                                    <figure class="op-logo figure-align">
+                                        <img src="images/osc-logo.svg">
+
+                                        <figcaption data-position="bottom"></figcaption>
+                                    </figure>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                    <div class="mainmenu-wrap grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_2 col-0_6-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col right">
+                                <a class="main-icon uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_2 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                                data-ver="0" href="#" id="op-staff-01">
+                                    <img src="images/staff.svg">
+                                    <span class="uib-caption">Staff Menu</span>
+                                </a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_3 col-0_6-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col left">
+                                <a class="main-icon uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+                                data-ver="0" href="#" id="op-student-01">
+                                    <img src="images/student.svg">
+                                    <span class="uib-caption">Student Menu</span>
+                                </a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+
+                        <span class="uib_shim"></span>
+                    </div>
+                    <!--start social media added by fadzil-->
+                    <div class="social-wrapper grid grid-pad urow uib_row_10 row-height-10" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_16 col-0_12-12 op-frontFooter op-frontFooterFull" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div id="social-title">Follow our latest news</div>
+                                <div class="social-btn-wrap grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+                                    <div class="social-btn col uib_col_10 col-0_4-12_4-4" data-uib="layout/col" data-ver="0">
+                                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_12 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                        href="https://www.facebook.com/imuelearning/">
+                                            <img src="images/fb-btn.svg">
+                                        </a>
+                                    </div>
+                                    <div class="social-btn col uib_col_11 col-0_4-12_4-8" data-uib="layout/col" data-ver="0">
+                                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_12 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                        href="https://www.youtube.com/channel/UCyq23enNKNjxbqYRPE8sccA">
+                                            <img src="images/youtube-btn.svg">
+                                        </a>
+                                    </div>
+                                    <div class="social-btn col uib_col_11 col-0_4-12_4-8" data-uib="layout/col" data-ver="0">
+                                        <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_12 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                        href="https://www.instagram.com/elearn_imu/">
+                                            <img src="images/instagram-btn.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end social media added by fadzil-->
+                </div>
+            </div>
+
+        </div>
+        <div class="upage hidden mainBG1" id="staffMenu">
+
+            <!--start footer added by fadzil-->
+            <a class="footer-btn right main-icon uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+            data-ver="0" href="#" id="fbck-btn">
+                <img src="images/feedbck-btm-icon.svg">
+                <span class="uib-caption">Student Menu</span>
+            </a>
+            <!--end footer added by fadzil-->
+
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_4 op-headerShadow op-headerSizing" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_7 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="op-staffBack"><i class="glyphicon glyphicon-chevron-left button-icon-left" data-position="left"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_5 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="op-staffOSidebar"><i class="glyphicon glyphicon-align-justify button-icon-left" data-position="left"></i> 
+                        </button>
+                        <div class="widget uib_w_6 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/imu-logo.svg">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_56_8">
+                    <div class="student-top grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_8 d-margins op-topTitle" data-uib="media/text" data-ver="0" name="uib_w_8">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <h1>Staff Menu</h1>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_6 col-0_4-12_4-4" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_9 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://adfs.imu.edu.my/adfs/ls/?SAMLRequest=nVLLbhpBEPyV1dz3NbDgHQESNoqM5CTIYB98iTq7TRhpHuvpnjj%2B%2ByyLrRAfOPg06pqu6upSzwis6dQy8sHd43NE4uSPNY7U8DEXMTjlgTQpBxZJcaO2y693SmaF6oJn33gjziiXGUCEgbV3Ilmv5uIHQDUGWdZyNN5XJYwno7qqymqC7Wh6JUdNXcupLGTdSJE8YqCeORe9UE8nirh2xOC4h4pymhZ1Kq92hVTlRJXjJ5Gs%2Bm20Ax5YB%2BaOVJ5Du6dM25hhGzP7OtS5oVwky3dzN95RtBi2GH7rBh%2Fu7%2F7R0SAEdy5A2nYGj7vn1rfRYNYdunyo6fTKFBoa0J6WHgem1Ilk8xbftXatdr8uJ%2Ffz1ETqdrfbpJvv251YzI7iakgiLD5r0CJDCwwf%2Fc3yc%2FXZ6U6%2B9b7Wq403unlNvvhggS%2FbPiK6TfdDq%2BIAjjQ67sM2xr%2FcBATGueAQUeSL08j%2Fr3HxFw%3D%3D&amp;RelayState=https%3A%2F%2Felearn.imu.edu.my%2Fsimplesaml%2F%2Fhome%2Fimuelearn%2Fpublic_html%2Fauth%2Fsaml%2Findex.php&amp;SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&amp;Signature=jga5CNxguLhLfIfLS8jjOj%2B1MhEGPMsndRwGwi%2FcqEmBq%2BoZ4MfMCUp2nefvc7zYxmj2YcYFHPaQNSlq1DltdiZkFAmkboyWt7cO1h0vKk%2FeHB4c7M0H4S23vBmSA5OYl%2Bn0MyJpWnaf0tirwpvFLplqxpYzFwZyAHDxDCxj2uCgLESqgLFCDZbqWUMK1WZj8dtMQ8llV8GnYsqCTDFx7ZX1zFh%2FDGxW5K6utcNbbWHgthPTHSdn4fpuC78j8FUdKruyD%2FpVbw%2F3yT2YaMN3u1%2FieHlD9TbuMNM8cpz%2FPQV8ousRuM9TCosgqPpC9LAsxx7cZmhfXkdoOZdCMK%2FqoA%3D%3D">
+                                    <img src="images/staffmenu/elearn-portal.svg">
+                                    <span class="uib-caption">eLearn</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_12 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://portal.imu.edu.my/">
+                                    <img src="images/staffmenu/imu-portal.svg">
+                                    <span class="uib-caption">IMU Portal</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_18 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSdzHPk-RLtviv5VtMGuqAGvb4GR12Yy80V4Pizf6ZADKNVRVg/viewform">
+                                    <img src="images/staffmenu/rental-equipment.svg">
+                                    <span class="uib-caption">Equipment Rental</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_19 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://elearn.imu.edu.my/course/view.php?id=1975">
+                                    <img src="images/staffmenu/teaching-learning-devices.svg">
+                                    <span class="uib-caption">Teaching Leaning Devices</span>
+                                </a><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_7 col-0_4-12_4-8" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_10 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://imu.edu.my/imucares/">
+                                    <img src="images/staffmenu/imu-cares.svg">
+                                    <span class="uib-caption">IMU Cares</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_13 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://hrportal.imu.edu.my/ekiosk/Login.aspx">
+                                    <img src="images/staffmenu/eleave.svg">
+                                    <span class="uib-caption">eLeave</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_16 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLScmgfBUKn98bSN9lH5JYTByz4kbYKZJuTwZ4OEwCV4nuuEc_g/viewform">
+                                    <img src="images/staffmenu/rental-studio.svg">
+                                    <span class="uib-caption">Studio Booking</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_15 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://192.168.55.44/fmi/iwp/res/iwp_auth.html;jsessionid=0138EF880741DAA0111BB30C.wpc1">
+                                    <img src="images/staffmenu/curricular-database.svg">
+                                    <span class="uib-caption">IMU Curricular Database</span>
+                                </a><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_8 col-0_4-12_4-8" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_11 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://tims.imu.edu.my/sws/default.aspx">
+                                    <img src="images/staffmenu/timetable.svg">
+                                    <span class="uib-caption">Timetable</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_20 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid+profile&amp;state=OpenIdConnect.AuthenticationProperties%3dtoPBtxRVl-iJ37nUuWLPand4IB3UEZJe4nDnnJj720JIuaCdQ2qJUnf-HGxhRKOC8nbSGaxzWlpjHgIFvgrOIkJBcuIIFsBKAZwEx8QfYdLpZ1c8pRlqnFnIGABK17FJWR39-UTi8FoidZ3w4HIxv1AZVd-RoUSL-k3JKcQ6SpPA7DbB4bNqA63dTCc4o8tF86cmZ7ZSUXN4hO2J2LiBEQ&amp;nonce=636421655240335365.ZTljYzUzYWItM2I3ZC00YWM5LWI5ZDctYmZlODUxNGZjOGUzNTM1NDlkMzUtZGVjZC00YTk4LThkZWUtYmQ1YjlmYTc4ZTYy&amp;redirect_uri=https%3a%2f%2fwww.office.com%2f&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=05dcf577-d85b-4b47-9e57-bc149d2467bc&amp;prompt=select_account">
+                                    <img src="images/studentmenu/email.svg">
+                                    <span class="uib-caption">Email</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_14 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://elearn.imu.edu.my/course/view.php?id=1641%22target%3D%22_blank">
+                                    <img src="images/staffmenu/ice-training.svg">
+                                    <span class="uib-caption">ICE Training</span>
+                                </a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div class="inner-element uib_w_40 uib_sidebar leftbar bar-bg thumb-bg bar-gutter sidebarMenuText" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="op-sidebarStaff">
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <div class="grid grid-pad urow uib_row_8 row-height-8" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_14 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <button class="btn widget uib_w_41 d-margins op-sideMenuText btn-sm btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="op-sideMenuHomeStaff">Home</button>
+                                    <button class="btn widget uib_w_42 d-margins op-sideMenuText sidebarMenuText btn-link" data-uib="twitter%20bootstrap/button" data-ver="1">Student</button>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden" id="studentMenu">
+
+            <!--start footer added by fadzil-->
+            <a class="footer-btn right main-icon uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_3 d-margins media-button-text-bottom" data-uib="media/graphic_button"
+            data-ver="0" href="#" id="fbck-btn">
+                <img src="images/feedbck-btm-icon.svg">
+                <span class="uib-caption">Student Menu</span>
+            </a>
+            <!--end footer added by fadzil-->
+
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_21 op-headerShadow op-headerSizing" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_23 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="op-studentBack"><i class="glyphicon glyphicon-chevron-left button-icon-left" data-position="left"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_22 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-align-justify button-icon-left" data-position="left"></i> 
+                        </button>
+                        <div class="widget uib_w_24 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/imu-logo.svg">
+
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_42_55">
+                    <div class="student-top grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_25 d-margins op-topTitle" data-uib="media/text" data-ver="0" name="uib_w_25">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <h1>Student Menu</h1>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_6 row-height-6" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_10 col-0_4-12_4-4" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_26 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://adfs.imu.edu.my/adfs/ls/?SAMLRequest=nVLLbhpBEPyV1dz3NbDgHQESNoqM5CTIYB98iTq7TRhpHuvpnjj%2B%2ByyLrRAfOPg06pqu6upSzwis6dQy8sHd43NE4uSPNY7U8DEXMTjlgTQpBxZJcaO2y693SmaF6oJn33gjziiXGUCEgbV3Ilmv5uIHQDUGWdZyNN5XJYwno7qqymqC7Wh6JUdNXcupLGTdSJE8YqCeORe9UE8nirh2xOC4h4pymhZ1Kq92hVTlRJXjJ5Gs%2Bm20Ax5YB%2BaOVJ5Du6dM25hhGzP7OtS5oVwky3dzN95RtBi2GH7rBh%2Fu7%2F7R0SAEdy5A2nYGj7vn1rfRYNYdunyo6fTKFBoa0J6WHgem1Ilk8xbftXatdr8uJ%2Ffz1ETqdrfbpJvv251YzI7iakgiLD5r0CJDCwwf%2Fc3yc%2FXZ6U6%2B9b7Wq403unlNvvhggS%2FbPiK6TfdDq%2BIAjjQ67sM2xr%2FcBATGueAQUeSL08j%2Fr3HxFw%3D%3D&amp;RelayState=https%3A%2F%2Felearn.imu.edu.my%2Fsimplesaml%2F%2Fhome%2Fimuelearn%2Fpublic_html%2Fauth%2Fsaml%2Findex.php&amp;SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&amp;Signature=jga5CNxguLhLfIfLS8jjOj%2B1MhEGPMsndRwGwi%2FcqEmBq%2BoZ4MfMCUp2nefvc7zYxmj2YcYFHPaQNSlq1DltdiZkFAmkboyWt7cO1h0vKk%2FeHB4c7M0H4S23vBmSA5OYl%2Bn0MyJpWnaf0tirwpvFLplqxpYzFwZyAHDxDCxj2uCgLESqgLFCDZbqWUMK1WZj8dtMQ8llV8GnYsqCTDFx7ZX1zFh%2FDGxW5K6utcNbbWHgthPTHSdn4fpuC78j8FUdKruyD%2FpVbw%2F3yT2YaMN3u1%2FieHlD9TbuMNM8cpz%2FPQV8ousRuM9TCosgqPpC9LAsxx7cZmhfXkdoOZdCMK%2FqoA%3D%3D">
+                                    <img src="images/staffmenu/elearn-portal.svg">
+                                    <span class="uib-caption">eLearn</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_29 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://slim.imu.edu.my/psp/ps/?cmd=login&amp;languageCd=ENG&amp;">
+                                    <img src="images/studentmenu/student-portal.svg">
+                                    <span class="uib-caption">Student Portal</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_32 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="#">
+                                    <img src="images/studentmenu/mentor-mentee-list.svg">
+                                    <span class="uib-caption">Mentor Mentee List</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_35 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://elearn.imu.edu.my/course/view.php?id=1333">
+                                    <img src="images/studentmenu/selfhelp-resources.svg">
+                                    <span class="uib-caption">Self-Help Resources</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_38 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://192.168.55.44/fmi/iwp/res/iwp_auth.html">
+                                    <img src="images/studentmenu/curricular-database.svg">
+                                    <span class="uib-caption">IMU Curricular</span>
+                                </a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_11 col-0_4-12_4-8" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_27 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://elearn.imu.edu.my/mod/folder/view.php?id=30395%22%20target%3D%22_blank">
+                                    <img src="images/studentmenu/academic-calendar.svg">
+                                    <span class="uib-caption">Academic Calendar</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_30 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://tims.imu.edu.my/sws/default.aspx">
+                                    <img src="images/studentmenu/timetable.svg">
+                                    <span class="uib-caption">Timetable</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_33 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://elearn.imu.edu.my/course/view.php?id=73#section-0">
+                                    <img src="images/studentmenu/resource-centre.svg">
+                                    <span class="uib-caption">Resource Centre</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_36 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="#">
+                                    <img src="images/studentmenu/research-lab-basic.svg">
+                                    <span class="uib-caption">Research lab</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_39 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://ysoftcl.imu.dir/m/">
+                                    <img src="images/studentmenu/print-fujixerox.svg">
+                                    <span class="uib-caption">Fuji Xerox</span>
+                                </a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_12 col-0_4-12_4-8" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_28 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=4345a7b9-9a63-4910-a426-35363201d503&amp;response_mode=form_post&amp;response_type=code+id_token&amp;scope=openid+profile&amp;state=OpenIdConnect.AuthenticationProperties%3dtoPBtxRVl-iJ37nUuWLPand4IB3UEZJe4nDnnJj720JIuaCdQ2qJUnf-HGxhRKOC8nbSGaxzWlpjHgIFvgrOIkJBcuIIFsBKAZwEx8QfYdLpZ1c8pRlqnFnIGABK17FJWR39-UTi8FoidZ3w4HIxv1AZVd-RoUSL-k3JKcQ6SpPA7DbB4bNqA63dTCc4o8tF86cmZ7ZSUXN4hO2J2LiBEQ&amp;nonce=636421655240335365.ZTljYzUzYWItM2I3ZC00YWM5LWI5ZDctYmZlODUxNGZjOGUzNTM1NDlkMzUtZGVjZC00YTk4LThkZWUtYmQ1YjlmYTc4ZTYy&amp;redirect_uri=https%3a%2f%2fwww.office.com%2f&amp;ui_locales=en-US&amp;mkt=en-US&amp;client-request-id=05dcf577-d85b-4b47-9e57-bc149d2467bc&amp;prompt=select_account">
+                                    <img src="images/studentmenu/email.svg">
+                                    <span class="uib-caption">Email</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_31 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://www.turnitin.com">
+                                    <img src="images/studentmenu/turnitin.svg">
+                                    <span class="uib-caption">TurnItIn</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_34 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://imu.edu.my/imucares/">
+                                    <img src="images/studentmenu/imu-cares.svg">
+                                    <span class="uib-caption">IMU Care</span>
+                                </a>
+                                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_37 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0"
+                                href="http://passwordreset.imu.edu.my:8080/pwm/private/Login">
+                                    <img src="images/studentmenu/reset-password.svg">
+                                    <span class="uib-caption">Reset Password</span>
+                                </a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div class="inner-element uib_w_43 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_15 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <button class="btn widget uib_w_44 d-margins btn-link op-sideMenuText" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+                                    <button class="btn widget uib_w_45 d-margins btn-link op-sideMenuText" data-uib="twitter%20bootstrap/button" data-ver="1">Staff</button>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden mainBG1" id="feedback">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_46" data-uib="layout/header" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_48 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-align-justify button-icon-left" data-position="left"></i>
+                        </button>
+                        <div class="widget uib_w_47 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/imu-logo.svg">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_17_24">
+                    <div class="grid grid-pad urow uib_row_13 row-height-13" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_19 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_55 d-margins op-topTitle" data-uib="media/text" data-ver="0" name="uib_w_55">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>FEEDBACK</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <form method="post" action="http://188.166.217.106/testing/process-feedback.php">
+                        <!-- Azrin - untuk process form feedback -->
+                        <div class="grid grid-pad urow uib_row_14 row-height-14" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_20 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <div class="table-thing widget uib_w_56 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                        <label class="narrow-control" for="rcpFullname"></label>
+                                        <input class="wide-control form-control default" type="text" placeholder="Fullname" id="rcpFullname" name="rcpFullname">
+                                    </div>
+                                    <div class="table-thing widget uib_w_57 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                        <label class="narrow-control" for="rcpEmail"></label>
+                                        <input class="wide-control form-control default" type="text" placeholder="Email" name="rcpEmail" id="rcpEmail">
+                                    </div>
+                                    <div class="table-thing widget uib_w_58 d-margins" data-uib="twitter%20bootstrap/text_area" data-ver="1">
+                                        <label class="narrow-control"></label>
+                                        <textarea rows="4" class="wide-control form-control" wrap="soft" placeholder="Insert comment/feedback ..." name="rcpFeedback" id="rcpFeedback"></textarea>
+                                    </div>
+                                    <input type="submit" class="btn widget uib_w_59 d-margins btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1" id="rcpSubmit" value="Submit Feedback">
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+                        <!-- Penutup form feedback -->
+                    </form>
+
+                </div>
+                <div class="inner-element uib_w_49 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}">
+                    <div class="sidebar-content content-area vertical-col">
+
+                        <div class="grid grid-pad urow uib_row_12 row-height-12" data-uib="layout/row" data-ver="0">
+                            <div class="col uib_col_18 col-0_12-12" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col">
+                                    <button class="btn widget uib_w_52 d-margins btn-link op-sideMenuText" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+                                    <button class="btn widget uib_w_53 d-margins btn-link op-sideMenuText" data-uib="twitter%20bootstrap/button" data-ver="1">Staff</button>
+                                    <button class="btn widget uib_w_54 d-margins btn-link op-sideMenuText" data-uib="twitter%20bootstrap/button" data-ver="1">Student</button>
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                            <span class="uib_shim"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

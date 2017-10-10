@@ -1,0 +1,211 @@
+/*
+ * Please see the included README.md file for license terms and conditions.
+ */
+
+/* This file is completely optional and not required. */
+
+/* Note the reference that includes it in the index.html file. */
+
+/* Disable certain interactions on touch devices */
+
+/* SOURCE: https://github.com/ftlabs/fastclick/blob/master/examples/input.html */
+
+/* LICENSE: https://github.com/ftlabs/fastclick/blob/master/LICENSE */
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    /* For some Androids */
+}
+
+/* Recommended for Windows 8 Phone */
+
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+
+html {
+    -ms-touch-action: pan-x;
+}
+
+/* Recommended for Windows 8 Phone */
+
+/* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+
+body {
+    -ms-touch-action: pan-y;
+    -ms-content-zooming: none;
+}
+
+/* allow copy-paste */
+
+input,
+textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+body {
+    /* margin: 0.5rem ; */
+    background: white;
+    color: black;
+}
+
+#mainTitle {
+    font-family: 'Antic';
+    font-size: 22px;
+    text-align: center;
+}
+
+#menuImage {
+    width: 100px;
+    height: 100px;
+}
+
+#image-menu-box {
+    text-align: center;
+}
+
+/*************************************/
+
+/**custom css**/
+
+/*************************************/
+
+body {
+    background: #FAFAFA;
+}
+
+.col > .vertical-col > .widget {
+    height: 100%;
+    margin-bottom: 35px;
+}
+
+.uib-graphic-button {
+    display: block;
+    height: 100px !important;
+}
+
+.default-graphic-text {
+    font-size: 14px;
+}
+
+.footer-btn {
+    position: fixed;
+    bottom: 3px;
+    z-index: 999;
+    right: -9px;
+}
+
+.footer-btn img {
+    width: 100px !important;
+}
+
+/***main page***/
+
+.mainBG1 {
+    background: #FAFAFA;
+}
+
+.logo-wrapper {
+    padding-top: 0;
+    height: 110px;
+}
+
+.logo-wrapper .scale-image img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.op-logo {
+    display: block;
+}
+
+.mainmenu-wrap {
+    padding-top: 20px;
+}
+
+.main-icon img {
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+.main-icon .uib-caption {
+    font-size: 16px;
+    display: block;
+}
+
+.social-wrapper {
+    padding: 0;
+    color: #fff;
+}
+
+#social-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-wrapper .content-area {
+    background: #333333;
+    margin-top: 65px;
+}
+
+.social-wrapper .op-frontFooterFull {
+    width: 100%;
+}
+
+.social-btn-wrap {
+    width: 325px;
+    margin: 0 auto;
+}
+
+.social-btn {
+    width: 80px;
+    padding: 0 !important;
+    margin-right: 15px;
+}
+
+.social-btn .uib-graphic-button {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+/***inner page***/
+
+.op-headerShadow {
+    box-shadow: 1px 1px 1px 1px #eee;
+}
+
+.op-headerSizing {
+    position: fixed;
+    background: #ECEFF1;
+    top: 0;
+}
+
+.op-headerShadow {
+    box-shadow: none;
+    border-bottom: 1px solid #FAFAFA;
+}
+
+.student-top {
+    margin-top: 60px;
+    height: 95px;
+}
+
+.student-top h1 {
+    font-size: 27px;
+}
+
+.media-button-text-bottom .uib-caption {
+    display: block;
+}
